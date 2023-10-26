@@ -14,25 +14,40 @@ const odds4 = arr4.filter((num) => num % 2 === 1);
 console.log(odds4); // [11]
 
 
+const countedWord = "hello"  
 
-function wordSorter(Vowelornot)  {
+  let cCount = 0 ;
+  let vCount = 0
+  
+  for (let i = 0; i < countedWord.length; i++) 
+    if (countedWord[i] === "a" || countedWord[i] === "e" ||countedWord[i] === "i" || countedWord[i] === "o" || countedWord[i] === "u" ) {
+      vCount +=1
+    } else {
+      cCount +=1
+    }
+    console.log(countedWord, "has", cCount, " consonants and ", vCount, "vowels.")
+  
 
-let cCount = 0 ;
-let vCount = 0
+    //trial for a different way to do it
 
-for (let i = 0; i < Vowelornot.length; i++) 
-  if (Vowelornot[i] === "a" || Vowelornot[i] === "e" ||Vowelornot[i] === "i" ||Vowelornot[i] === "o" || Vowelornot[i] === "u" ) {
-    vCount ++
-  } else {
-    cCount ++
-  }
-  console.log(wordSorter, "has", cCount, " consonants and ", vCount, "vowels.")
-}
-wordSorter("hello");
-wordSorter("ukelele");
-wordSorter("awesome");
-wordSorter ("onomonopia");
-wordSorter("textbook");
+// function wordSorter(Vowelornot)  {
+
+// let cCount = 0 ;
+// let vCount = 0
+
+// for (let i = 0; i < Vowelornot.length; i++) 
+//   if (Vowelornot[i] === "a" || Vowelornot[i] === "e" ||Vowelornot[i] === "i" ||Vowelornot[i] === "o" || Vowelornot[i] === "u" ) {
+//     vCount +=1
+//   } else {
+//     cCount +=1
+//   }
+//   console.log(wordSorter, "has", cCount, " consonants and ", vCount, "vowels.")
+// }
+// wordSorter("hello");
+// wordSorter("ukelele");
+// wordSorter("awesome");
+// wordSorter ("onomonopia");
+// wordSorter("textbook");
 
 
 
